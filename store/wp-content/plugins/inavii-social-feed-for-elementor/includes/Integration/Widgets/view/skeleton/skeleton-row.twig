@@ -1,0 +1,9 @@
+{% if is_mobile %}
+    {% set loop_limit = 3 %}
+{% else %}
+    {% set loop_limit = 5 %}
+{% endif %}
+
+{% for index in 1..loop_limit %}
+    <div class="inavii-image-skeleton-init"></div>
+{% endfor %}

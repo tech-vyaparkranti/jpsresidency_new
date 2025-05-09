@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//jpsresidency.in/main-sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://jpsresidency.in/?thim_elementor_kit=footer</loc>
+		<lastmod>2024-04-13T05:53:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://jpsresidency.in/?thim_elementor_kit=header</loc>
+		<lastmod>2024-03-19T16:00:44+00:00</lastmod>
+		<image:image>
+			<image:loc>https://jpsresidency.in/wp-content/uploads/2015/09/cropped-Untitled-design.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jpsresidency.in/wp-content/uploads/2024/03/placeholder-661-1.png</image:loc>
+		</image:image>
+	</url>
+</urlset>
