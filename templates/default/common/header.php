@@ -1,4 +1,10 @@
 <?php debug_backtrace() || die ('Direct access not permitted'); ?>
+<?php
+// Prevent undefined variable + avoid null issues with htmlentities
+if (!isset($title_tag) || is_null($title_tag)) {
+    $title_tag = PMS_SITE_TITLE ?? 'Hotel';
+}
+?>
 <!DOCTYPE html>
 <html lang="<?php echo PMS_LANG_TAG; ?>">
 <head>
@@ -115,8 +121,8 @@
 <body id="page-<?php echo $pms_page_id; ?>" itemscope itemtype="http://schema.org/WebPage"<?php if(PMS_RTL_DIR) echo ' dir="rtl"'; ?>>
 
 <!-- Schema.org markup for Google+ -->
-<meta itemprop="name" content="<?php echo htmlentities($title_tag, ENT_QUOTES); ?>">
-<meta itemprop="description" content="<?php echo htmlentities($meta_descr, ENT_QUOTES); ?>">
+<meta itemprop="name" content="<?php echo htmlentities((string)$title_tag, ENT_QUOTES);?>">
+<meta itemprop="description" content="<?php echo htmlentities((string)$meta_descr, ENT_QUOTES); ?>">
 <?php
 if(isset($page_img)){ ?>
     <meta itemprop="image" content="<?php echo $page_img; ?>">

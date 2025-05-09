@@ -1,13 +1,14 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /jpsresidency_new/
+    RewriteBase /
 
-    # Prevent TRACE/TRACK & simple security
+    # Block TRACE/TRACK for security
     RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
     RewriteRule .* - [F]
 
-    # Redirect non-files/dirs to index.php
+    # Avoid looping on index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/index\.php$
     RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
