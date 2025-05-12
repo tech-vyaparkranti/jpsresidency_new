@@ -22,6 +22,8 @@ define('PMS_DB_HOST', 'localhost');
 define('PMS_DB_PORT', '3306');
 define('PMS_DB_USER', 'root');
 define('PMS_DB_PASS', '');
+// define('PMS_DB_USER', 'jpsresidency');
+// define('PMS_DB_PASS', 'm952S0mh$');
 define('PMS_SENDER_EMAIL', 'support@jpsresidency.in');
 define('PMS_SENDER_NAME', 'JPS Residency ');
 define('PMS_USE_SMTP', '1');
